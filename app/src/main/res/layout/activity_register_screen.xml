@@ -18,10 +18,9 @@
 
     <EditText
         android:id="@+id/editTextEmailReg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="323dp"
+        android:layout_height="49dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
         android:ems="10"
         android:hint="user@email.com"
         android:inputType="textEmailAddress"
@@ -58,18 +57,29 @@
         android:text="Password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextEmailReg" />
-
+    <ProgressBar
+        android:id="@+id/progress_Bar_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailReg"
+        android:visibility="gone"/>
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
+        app:backgroundTint="@color/medium_sea_green"
         android:layout_marginRight="50dp"
         android:text="Create Account"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.404"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextUserNameReg" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextUserNameReg"
+        app:layout_constraintVertical_bias="0.252" />
 
     <TextView
         android:id="@+id/txtViewFullNameReg"
@@ -89,7 +99,6 @@
         android:layout_marginRight="50dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Nick Evans"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtViewFullNameReg" />
 
@@ -103,6 +112,41 @@
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imgViewRegBackground"
+        app:layout_constraintTop_toTopOf="@+id/imgViewRegBackground" />
+
+    <ImageView
+        android:id="@+id/imageViewLogoReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="@+id/imgViewRegBackground"
+        app:layout_constraintTop_toTopOf="@+id/imgViewRegBackground"
+        app:srcCompat="@drawable/ic_logo" />
+    <TextView
+        android:id="@+id/account_Ask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already you have an account?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <TextView
+        android:id="@+id/login_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Here"
+        android:textColor="@color/spanish_gray"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account_Ask"
+        app:layout_constraintVertical_bias="0.103" />
 </androidx.constraintlayout.widget.ConstraintLayout>

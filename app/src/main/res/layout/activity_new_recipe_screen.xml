@@ -149,8 +149,9 @@
         android:layout_marginStart="20dp"
         android:ems="10"
         android:hint="Write Down Recipe Name"
-        android:textColor="@color/black"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/imgViewRecipe"
         app:layout_constraintTop_toBottomOf="@+id/txtViewRecipeName" />
 
