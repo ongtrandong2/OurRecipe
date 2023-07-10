@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">OurRecipe</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="user">User</string>
+    <string name="my_kitchen">My Kitchen</string>
+    <string name="title">Title</string>
+    <string name="name">Name</string>
+    <string name="_584_followers">584 followers</string>
+    <string name="dot">.</string>
+    <string name="_23k_like">23k Like</string>
+    <string name="_20_recipe">20\nRecipe</string>
+    <string name="_78_saved">78\nSaved</string>
+    <string name="_238_following">238\nFollowing</string>
+    <string name="setting">setting</string>
+    <string name="edit">edit</string>
+    <string name="avatar">avatar</string>
 </resources>

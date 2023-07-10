@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="20dp"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:src="@drawable/image"
+        android:id="@+id/gridItemImage">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/gridItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:text="@string/_20_recipe"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+</androidx.cardview.widget.CardView>
