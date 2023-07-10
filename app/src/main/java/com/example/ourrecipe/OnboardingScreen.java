@@ -8,7 +8,7 @@ import android.os.Handler;
 
 public class OnboardingScreen extends AppCompatActivity {
 
-    private static final long DELAY_TIME = 3000;
+    private static final long DELAY_TIME = 2000;
     private Handler handler = new Handler();
     private Runnable  delayedNavigation = new Runnable() {
         @Override

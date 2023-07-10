@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/HKIV/SE114.Introduction to Mobile Application/OurRecipe (1)/app/src/main/res/layout/activity_browse_recipe_list_view.xml" value="0.264" />
+        <entry key="..\:/HKIV/SE114.Introduction to Mobile Application/OurRecipe (1)/app/src/main/res/layout/activity_browse_recipe_screen.xml" value="0.2" />
+        <entry key="..\:/HKIV/SE114.Introduction to Mobile Application/OurRecipe (1)/app/src/main/res/layout/activity_login_screen.xml" value="0.1" />
+        <entry key="..\:/HKIV/SE114.Introduction to Mobile Application/OurRecipe (1)/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/HKIV/SE114.Introduction to Mobile Application/OurRecipe (1)/app/src/main/res/layout/activity_new_recipe_screen.xml" value="0.2" />
+        <entry key="..\:/HKIV/SE114.Introduction to Mobile Application/OurRecipe (1)/app/src/main/res/layout/activity_onboarding_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/HKIV/SE114.Introduction to Mobile Application/OurRecipe (1)/app/src/main/res/layout/activity_register_screen.xml" value="0.25416666666666665" />
         <entry key="..\:/HKIV/SE114.Introduction to Mobile Application/Project/OurRecipe/app/src/main/res/layout/activity_login_screen.xml" value="0.25416666666666665" />
         <entry key="..\:/HKIV/SE114.Introduction to Mobile Application/Project/OurRecipe/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/HKIV/SE114.Introduction to Mobile Application/Project/OurRecipe/app/src/main/res/layout/activity_new_recipe_screen.xml" value="0.25" />
