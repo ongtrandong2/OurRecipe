@@ -50,7 +50,7 @@
                     android:layout_marginTop="10dp"
                     app:srcCompat="@drawable/ic_edit" />
 
-                <View
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/viewAdditionalInfo"
                     android:layout_width="275dp"
                     android:layout_height="50dp"
@@ -58,7 +58,8 @@
                     android:layout_alignParentBottom="true"
                     android:layout_marginStart="15dp"
                     android:layout_marginBottom="15dp"
-                    android:background="@mipmap/add_info" />
+                    android:background="@mipmap/rectangle"
+                    android:hint="    +  Add Info" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -90,7 +91,7 @@
                     android:layout_marginTop="10dp"
                     app:srcCompat="@drawable/ic_edit" />
 
-                <View
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/viewHowToCook"
                     android:layout_width="275dp"
                     android:layout_height="50dp"
@@ -98,7 +99,8 @@
                     android:layout_alignParentBottom="true"
                     android:layout_marginStart="15dp"
                     android:layout_marginBottom="15dp"
-                    android:background="@mipmap/add_directions" />
+                    android:background="@mipmap/rectangle"
+                    android:hint="    +  Add Directions" />
             </RelativeLayout>
 
             <ImageView
@@ -199,7 +201,7 @@
                     android:layout_marginTop="10dp"
                     app:srcCompat="@drawable/ic_edit" />
 
-                <View
+                <ImageView
                     android:id="@+id/viewGrallery"
                     android:layout_width="275dp"
                     android:layout_height="50dp"
@@ -239,7 +241,7 @@
                     android:layout_marginTop="10dp"
                     app:srcCompat="@drawable/ic_edit" />
 
-                <View
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/viewIngredients"
                     android:layout_width="275dp"
                     android:layout_height="50dp"
@@ -247,7 +249,8 @@
                     android:layout_alignParentBottom="true"
                     android:layout_marginStart="15dp"
                     android:layout_marginBottom="15dp"
-                    android:background="@mipmap/add_ingredients" />
+                    android:background="@mipmap/rectangle"
+                    android:hint="    +  Add Ingredient" />
             </RelativeLayout>
 
             <Button

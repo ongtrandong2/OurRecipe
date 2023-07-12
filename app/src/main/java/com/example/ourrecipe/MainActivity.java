@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         btnTest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, BrowseRecipeScreen.class);
+                Intent intent = new Intent(MainActivity.this, NewRecipeScreen.class);
                 startActivity(intent);
             }
         });
