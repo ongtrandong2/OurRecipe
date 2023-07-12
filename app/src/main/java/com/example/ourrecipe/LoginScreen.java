@@ -28,11 +28,11 @@ public class LoginScreen extends AppCompatActivity {
     public void onStart()
     {
         super.onStart();
-        FirebaseUser currentUser =mAuth.getCurrentUser();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
         if(currentUser!=null)
         {
-            Toast.makeText(getApplicationContext(),"Login Successful",Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(LoginScreen.this,MainActivity.class);
+            Toast.makeText(getApplicationContext(),"Login Successful", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(LoginScreen.this, MainActivity.class);
             startActivity(intent);
             finish();
         }
@@ -41,12 +41,15 @@ public class LoginScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mAuth = FirebaseAuth.getInstance();
+        progressBar = findViewById(R.id.progress_Bar);
         setContentView(R.layout.activity_login_screen);
 
 
-
         TextView textViewEmail = findViewById(R.id.txtViewEmailLog);
-        textViewEmail.setText((CharSequence) email);
+
+
+        TextView textViewPassword = findViewById(R.id.txtViewPasswordLog);
+
 
         EditText editTextEmail = findViewById(R.id.editTextEmailLog);
 
@@ -56,7 +59,9 @@ public class LoginScreen extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(password.equals(editTextPassword.getText().toString()) && email.equals(editTextEmail.getText().toString())) {
+                textViewEmail.setText((CharSequence) email);
+                textViewPassword.setText((CharSequence) password);
+                if(textViewPassword.equals(editTextPassword.getText().toString()) && textViewEmail.equals(editTextEmail.getText().toString())) {
                     Intent intent = new Intent(LoginScreen.this, MainActivity.class);
                     startActivity(intent);
                 }
@@ -77,7 +82,6 @@ public class LoginScreen extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                progressBar = findViewById(R.id.progress_Bar_login);
                 progressBar.setVisibility(View.VISIBLE);
                 String email,password;
                 email = String.valueOf(editTextEmail.getText());

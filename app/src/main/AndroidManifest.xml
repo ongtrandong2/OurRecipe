@@ -10,8 +10,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.OurRecipe"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
         tools:targetApi="31">
+        <activity
+            android:name=".BrowseRecipeListView"
+            android:exported="false" />
+        <activity
+            android:name=".BrowseRecipeScreen"
+            android:exported="false" />
         <activity
             android:name=".RegisterScreen"
             android:exported="false" />

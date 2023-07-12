@@ -6,245 +6,267 @@
     android:layout_height="match_parent"
     tools:context=".NewRecipeScreen">
 
-    <RelativeLayout
-        android:id="@+id/revLayoutAdditionalInfo"
-        android:layout_width="325dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="0dp"
-        android:background="#F5F5F5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/revLayoutHowToCook">
-
-        <TextView
-            android:id="@+id/txtViewAdditionalInfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="10dp"
-            android:text="Additional Info"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/imgViewEditAdditionalInfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="280dp"
-            android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/ic_edit" />
-
-        <View
-            android:id="@+id/viewAdditionalInfo"
-            android:layout_width="275dp"
-            android:layout_height="50dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginBottom="15dp"
-            android:background="@mipmap/add_info" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/revLayoutHowToCook"
-        android:layout_width="325dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="28dp"
-        android:background="#F5F5F5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/revLayoutIngredients">
-
-        <TextView
-            android:id="@+id/txtViewHowToCook"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="10dp"
-            android:text="How to Cook"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/imgViewEditHowToCook"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="280dp"
-            android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/ic_edit" />
-
-        <View
-            android:id="@+id/viewHowToCook"
-            android:layout_width="275dp"
-            android:layout_height="50dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginBottom="15dp"
-            android:background="@mipmap/add_directions" />
-    </RelativeLayout>
-
-    <ImageView
-        android:id="@+id/imageViewBackBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="15dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="?attr/actionModeCloseDrawable" />
-
-    <TextView
-        android:id="@+id/textViewBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="15dp"
-        android:text="Back to My Recipes"
-        android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/imageViewBackBtn"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textViewNewRecipe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
-        android:text="New Recipe"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imgViewRecipe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/addsquare" />
-
-    <TextView
-        android:id="@+id/txtViewRecipeName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:text="Recipe Name"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@+id/imgViewRecipe"
-        app:layout_constraintTop_toBottomOf="@+id/textViewNewRecipe" />
-
-    <EditText
-        android:id="@+id/editTextRecipeName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:ems="10"
-        android:hint="Write Down Recipe Name"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@+id/imgViewRecipe"
-        app:layout_constraintTop_toBottomOf="@+id/txtViewRecipeName" />
-
-    <RelativeLayout
-        android:id="@+id/revLayoutGallery"
-        android:layout_width="325dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="180dp"
-        android:background="#F5F5F5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/txtViewGallery"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="10dp"
-            android:text="Gallery"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/imgViewEditGallery"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="280dp"
-            android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/ic_edit" />
-
-        <View
-            android:id="@+id/viewGrallery"
-            android:layout_width="275dp"
-            android:layout_height="50dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginBottom="15dp"
-            android:background="@mipmap/add_gallery" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/revLayoutIngredients"
-        android:layout_width="325dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="28dp"
-        android:background="#F5F5F5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/revLayoutGallery">
-
-        <TextView
-            android:id="@+id/txtViewIngredients"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="10dp"
-            android:text="Ingredients"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/imgViewEditIngredients"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="280dp"
-            android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/ic_edit" />
-
-        <View
-            android:id="@+id/viewIngredients"
-            android:layout_width="275dp"
-            android:layout_height="50dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginBottom="15dp"
-            android:background="@mipmap/add_ingredients" />
-    </RelativeLayout>
-
-    <Button
-        android:id="@+id/button"
+    <ScrollView
+        android:id="@+id/scrollViewNewRecipe"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Post to Feed"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/revLayoutAdditionalInfo" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/revLayoutAdditionalInfo"
+                android:layout_width="325dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="30dp"
+                android:background="#F5F5F5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/revLayoutHowToCook">
+
+                <TextView
+                    android:id="@+id/txtViewAdditionalInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Additional Info"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgViewEditAdditionalInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="280dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/ic_edit" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/viewAdditionalInfo"
+                    android:layout_width="275dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@mipmap/rectangle"
+                    android:hint="    +  Add Info" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/revLayoutHowToCook"
+                android:layout_width="325dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="30dp"
+                android:background="#F5F5F5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/revLayoutIngredients">
+
+                <TextView
+                    android:id="@+id/txtViewHowToCook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="How to Cook"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgViewEditHowToCook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="280dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/ic_edit" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/viewHowToCook"
+                    android:layout_width="275dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@mipmap/rectangle"
+                    android:hint="    +  Add Directions" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageViewBackBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="?attr/actionModeCloseDrawable" />
+
+            <TextView
+                android:id="@+id/textViewBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Back to My Recipes"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/imageViewBackBtn"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewNewRecipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="40dp"
+                android:text="New Recipe"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgViewRecipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="100dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/addsquare" />
+
+            <TextView
+                android:id="@+id/txtViewRecipeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Recipe Name"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/imgViewRecipe"
+                app:layout_constraintTop_toBottomOf="@+id/textViewNewRecipe" />
+
+            <EditText
+                android:id="@+id/editTextRecipeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:hint="Write Down Recipe Name"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/imgViewRecipe"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewRecipeName" />
+
+            <RelativeLayout
+                android:id="@+id/revLayoutGallery"
+                android:layout_width="325dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="180dp"
+                android:background="#F5F5F5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/txtViewGallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Gallery"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgViewEditGallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="280dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/ic_edit" />
+
+                <ImageView
+                    android:id="@+id/viewGrallery"
+                    android:layout_width="275dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@mipmap/add_gallery" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/revLayoutIngredients"
+                android:layout_width="325dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="30dp"
+                android:background="#F5F5F5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/revLayoutGallery">
+
+                <TextView
+                    android:id="@+id/txtViewIngredients"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Ingredients"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgViewEditIngredients"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="280dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/ic_edit" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/viewIngredients"
+                    android:layout_width="275dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@mipmap/rectangle"
+                    android:hint="    +  Add Ingredient" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="50dp"
+                android:text="Post to Feed"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.48"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/revLayoutAdditionalInfo"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

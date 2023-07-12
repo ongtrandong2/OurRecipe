@@ -23,33 +23,40 @@ import com.google.firebase.ktx.Firebase;
 
 public class RegisterScreen extends AppCompatActivity {
 
-    private String correctEmail;
-    private String correctPassword;
-    private String correctUserName;
+    private String correctEmail = new String();
+    private String correctPassword = new String();
+    private String correctUserName = new String();
     FirebaseAuth mAuth;
     ProgressBar progressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_screen);
+
         mAuth = FirebaseAuth.getInstance();
+
         EditText editTextEmail = findViewById(R.id.editTextEmailReg);
         correctEmail = editTextEmail.getText().toString();
         EditText editTextPassword = findViewById(R.id.editTextPasswordReg);
         correctPassword = editTextPassword.getText().toString();
         EditText editTextUserName = findViewById(R.id.editTextUserNameReg);
         correctUserName = editTextUserName.getText().toString();
+
         Button btnRegister = findViewById(R.id.btnRegister);
-        progressBar = findViewById(R.id.progress_Bar_register);
+
+        progressBar = findViewById(R.id.progress_Bar);
+
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 progressBar.setVisibility(View.VISIBLE);
+
                 Intent intent = new Intent();
                 String email, password, userName;
                 email = String.valueOf(editTextEmail.getText());
-                password =String.valueOf(editTextPassword.getText());
+                password = String.valueOf(editTextPassword.getText());
                 userName = String.valueOf(editTextUserName.getText());
+
                 if(TextUtils.isEmpty(email))
                 {
                     Toast.makeText(RegisterScreen.this,"Enter email", Toast.LENGTH_SHORT).show();
@@ -81,10 +88,11 @@ public class RegisterScreen extends AppCompatActivity {
             }
         });
         TextView btnLoginNav = findViewById(R.id.login_nav);
+
         btnLoginNav.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(RegisterScreen.this,LoginScreen.class);
+                Intent intent = new Intent(RegisterScreen.this, LoginScreen.class);
                 startActivity(intent);
                 finish();
             }
