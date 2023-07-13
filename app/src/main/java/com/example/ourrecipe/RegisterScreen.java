@@ -17,7 +17,12 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.auth.User;
+import com.google.firebase.storage.FirebaseStorage;
+
 public class RegisterScreen extends AppCompatActivity {
 
     private String correctEmail;
@@ -25,10 +30,19 @@ public class RegisterScreen extends AppCompatActivity {
     private String correctUserName;
     FirebaseAuth mAuth;
     ProgressBar progressBar;
+
+    private DatabaseReference database;
+    private FirebaseStorage firebaseStorage;
+    public void NewUser(String userId, String name, String email) {
+        ClassUser user = new ClassUser(name, email);
+
+        database.child("users").child(userId).setValue(user);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_screen);
+        database = FirebaseDatabase.getInstance().getReference();
         mAuth = FirebaseAuth.getInstance();
         EditText editTextEmail = findViewById(R.id.editTextEmailReg);
         correctEmail = editTextEmail.getText().toString();
@@ -66,7 +80,7 @@ public class RegisterScreen extends AppCompatActivity {
                                 progressBar.setVisibility(View.GONE);
 
                                 if (task.isSuccessful()) {
-
+                                    NewUser(mAuth.getUid(), userName,email);
                                     Toast.makeText(RegisterScreen.this, "Authentication created.",
                                             Toast.LENGTH_SHORT).show();
                                 } else {

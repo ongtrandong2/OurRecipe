@@ -32,7 +32,7 @@ public class LoginScreen extends AppCompatActivity {
         if(currentUser!=null)
         {
             Toast.makeText(getApplicationContext(),"Login Successful",Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(LoginScreen.this,MainActivity.class);
+            Intent intent = new Intent(LoginScreen.this,BrowseRecipeScreen.class);
             startActivity(intent);
             finish();
         }
@@ -57,7 +57,7 @@ public class LoginScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(password.equals(editTextPassword.getText().toString()) && email.equals(editTextEmail.getText().toString())) {
-                    Intent intent = new Intent(LoginScreen.this, MainActivity.class);
+                    Intent intent = new Intent(LoginScreen.this, BrowseRecipeScreen.class);
                     startActivity(intent);
                 }
                 else {
@@ -98,7 +98,7 @@ public class LoginScreen extends AppCompatActivity {
                         if(task.isSuccessful())
                         {
                             Toast.makeText(getApplicationContext(),"Login Successful",Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(LoginScreen.this,MainActivity.class);
+                            Intent intent = new Intent(LoginScreen.this,BrowseRecipeScreen.class);
                             startActivity(intent);
                             finish();
                         }

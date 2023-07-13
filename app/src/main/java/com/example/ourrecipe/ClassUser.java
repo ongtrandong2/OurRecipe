@@ -3,16 +3,41 @@ package com.example.ourrecipe;
 public class ClassUser {
     int avt;
     String name;
-    String description;
+    String bio;
     String email;
-    String[] keyRecipe;
+    String phone;
 
-    public ClassUser(int avt, String name, String description, String email, String[] keyRecipe) {
+    public ClassUser(String name, String bio, String email, String phone) {
+        this.name = name;
+        this.bio = bio;
+        this.email = email;
+        this.phone = phone;
+    }
+
+    public String getBio() {
+        return bio;
+    }
+
+    public void setBio(String bio) {
+        this.bio = bio;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public ClassUser(int avt, String name, String email) {
         this.avt = avt;
         this.name = name;
-        this.description = description;
         this.email = email;
-        this.keyRecipe = keyRecipe;
+    }
+    public ClassUser(String name, String email) {
+        this.name = name;
+        this.email = email;
     }
 
 
@@ -34,13 +59,6 @@ public class ClassUser {
         this.name = name;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
 
     public String getEmail() {
         return email;
@@ -50,13 +68,6 @@ public class ClassUser {
         this.email = email;
     }
 
-    public String[] getKeyRecipe() {
-        return keyRecipe;
-    }
-
-    public void setKeyRecipe(String[] keyRecipe) {
-        this.keyRecipe = keyRecipe;
-    }
 
 
 

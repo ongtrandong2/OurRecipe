@@ -16,10 +16,10 @@
             android:name=".RegisterScreen"
             android:exported="false" />
         <activity
-            android:name=".OnboardingScreen"
+            android:name=".BrowseRecipeScreen"
             android:exported="false" />
         <activity
-            android:name=".LoginScreen"
+            android:name=".OnboardingScreen"
             android:exported="false" />
         <activity
             android:name=".UserProfile"
@@ -28,7 +28,19 @@
             android:name=".NewRecipeScreen"
             android:exported="false" />
         <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditRecipeScreen"
+            android:exported="false" />
+        <activity
+            android:name=".SettingScreen"
+            android:exported="false" />
+        <activity
+            android:name=".LoginScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
